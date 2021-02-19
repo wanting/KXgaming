@@ -17,9 +17,18 @@ body{
     width: 100%;
     object-fit: cover;
 }
+.img_fit_w {
+  /* height: 100%; */
+  width: 100%;
+  object-fit: cover;
+}
 .img_contain{
     height: 100%;
     object-fit: contain;
+}
+.img_contain_w{
+  width: 100%;
+  object-fit: contain;
 }
 .white_space{
     white-space: nowrap;
@@ -52,6 +61,11 @@ body{
   }
   
   /* ---------------------------------------------------------- */
+  .wrapper{
+    margin: 0 auto;
+    /* padding: 0 2.5vw; */
+    /* min-width: 800px; */
+  }
 /* ---------------------------------------------------------- */
 #top {
     width: 100%;
@@ -96,8 +110,8 @@ ul.topnav li{
     /* min-width: 0; */
     /* white-space: nowrap; */
     padding: 1rem;
-    font-size: 1rem;
-    /* border: 1px solid cornflowerblue; */
+    font-size: .8rem;
+    border: 1px solid cornflowerblue;
 }
 ul.topnav li span{
     width: 20%;
@@ -116,13 +130,43 @@ ul.topnav li span{
 
 section{
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
+    /* height: auto; */
+    position: relative;
+}
+.headline{
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  /* background-color: aquamarine; */
+  position: absolute;
+  top: 1.5rem;
 }
 .title{
     font-size: 2rem;
-    font-weight: bold;
-    margin-right: 2rem;
+    font-weight: 500;
+    margin:0 2rem 0 1rem;
 }
 .subtitle{
     font-size: 1rem;
+}
+/* ---------------------------------------------------------- */
+#games{
+  background: no-repeat url("/images/index_sention2.png");
+  background-position: center;
+  background-size: contain;
+}
+
+#efficient{
+  z-index: 100;
+}
+#contact{
+  /* position: absolute; */
+  bottom: 0;
+  z-index: 99;
+}
+#contact .headline{
+  /* position: absolute;
+  bottom: 0;
+  z-index: 998; */
 }
