@@ -139,20 +139,20 @@ section{
 }
 .contact_info{
   padding: 8%;
+  align-items: flex-start;
 }
 .contact_info li{
   display: flex;
-  /* justify-content: center; */
+  justify-content: flex-start;
   align-items: center;
   white-space: nowrap;
-    background-color: rgba(210, 105, 30, 0.397);
+  margin: 5px 0;
+    /* background-color: rgba(210, 105, 30, 0.397); */
 }
 .QR{
-  justify-content: center;
 }
 .tel,.mail,.skype,.twitter{
   flex: 1;
-  justify-content: flex-start;
 }
 .table{
   /* margin: 0 auto; */

@@ -17,6 +17,9 @@ body {
   /* 消除鋸齒 */
   -webkit-font-smoothing: antialiased;
 }
+a{
+  text-decoration: none;
+}
 .img_fit {
   height: 100%;
   width: 100%;
