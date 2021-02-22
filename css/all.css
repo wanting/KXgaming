@@ -1,7 +1,7 @@
 .font_family {
   font-family: "Noto Sans SC" !important;
 }
-html, body{
+html{
   overflow-x: hidden;
 }
 body {
