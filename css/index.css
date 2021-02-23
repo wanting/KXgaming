@@ -267,9 +267,20 @@ section{
 .tel,.mail,.skype,.twitter{
   flex: 1;
 }
-.table{
+.table_content{
+  /* background-color: rgba(222, 184, 135, 0.479); */
   /* margin: 0 auto; */
-  /* padding-top: 5%; */
+  padding: 25%;
+  /* flex-flow: column; */
+}
+.table_content li{
+  padding: 10px 0;
+  border-bottom: 2px solid rgb(184, 184, 184) ;
+}
+.table_btn{
+  background-color: #ffae00;
+  border-radius: 15px;
+  padding: 5px 15px;
 }
 .sention4_bg{
   bottom: 0;
