@@ -18,25 +18,73 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   </head>
   <body class="">
     <main class="">
+      <nav class="headnav position-absolute row w-100">
+        <div class="logo col-2">
+          <img src="images/logo.svg" alt="" class="img_fluid" >
+        </div>
+        <div class="col"></div>
+        <ul class="col-5 navbar row">
+          <li class="white col">
+            <a href="#">
+              <span>主页</span>
+              <!-- <span>&emsp;主页&emsp;</span> -->
+            <div class="dot"></div>
+            </a>
+          </li>
+          <li class="white col">
+            <a href="h#">
+              <!-- <span>&emsp;游戏&emsp;</span> -->
+              <span>游戏</span>
+            <div class="dot"></div>
+            </a>
+          </li>
+          <li class="white col">
+            <a href="#">
+              <span>服务优势</span>
+              <div class="dot"></div>
+            </a>
+          </li>
+          <li class="white col">
+            <a href="#">
+              <span>合作流程</span>
+              <div class="dot"></div>
+            </a>
+          </li>
+          <li class="white col">
+            <a href="#">
+            <span>联系我们</span>
+            <div class="dot"></div>
+            </a>
+          </li>
+        </ul>
+      </nav>
       <section id="top" class="">
-        <nav class="headnav position-absolute">
+
+        <!-- <nav class="headnav position-absolute">
           <div class="logo">
             <img src="images/logo.svg" alt="" class="img_contain" />
           </div>
           <div class="navbar">
             <ul class="topnav">
-              <!-- <li class="white"><span>&emsp;主页&emsp;</span></li>
-              <li class="white"><span>&emsp;游戏&emsp;</span></li> -->
               <li class="white">
-                <span>&emsp;主页&emsp;</span>
+                <a href="#">
+                  <span>&emsp;主页&emsp;</span>
                 <div class="dot"></div>
+                </a>
               </li>
               <li class="white">
-                <span>&emsp;游戏&emsp;</span>
+                <a href="http://www.flycan.com/article/css/css-cursor-209.html">
+                  <span>&emsp;游戏&emsp;</span>
                 <div class="dot"></div>
+                </a>
               </li>
               <li class="white">
                 <span>服务优势</span>
@@ -52,7 +100,7 @@
               </li>
             </ul>
           </div>
-        </nav>
+        </nav> -->
         <img
           src="images/top.png"
           alt=""
@@ -60,185 +108,122 @@
         />
       </section>
 
-      <!-- <div class="wrapper">
-        <section id="games">
-          <div class="headline">
-              <img src="images/headline01.png" alt="" class="img_fluid">
-          </div>
-          <div class="container">
-            <p class="red">12456789</p>
-          </div>
-                    <img src="images/index_sention1.png" alt="" class="img_fluid">
-        </section>
-  
-        <section id="profession">
-          <div class="headline">
-            <img src="images/headline02.png" alt="" class="img_fluid">
-          </div>
-          <div class="container">
-            <p class="red">12456789</p>
-          </div>
-          <img src="images/index_sention2.png" alt="" class="img_fluid">
-        </section>
-  
-        <section id="efficient">
-          <div class="headline">
-            <img src="images/headline03.png" alt="" class="img_fluid">
-          </div>
-          <div class="container">
-            <p class="red">12456789</p>
-          </div>
-          <img src="images/index_sention3.png" alt="" class="img_fluid">
-        </section>
-  
-        <section id="contact" class="">
-          <div class="headline">
-            <img src="images/headline04.png" alt="" class="img_fluid">
-          </div>
-          <div class="container contact_box">
-            <div class="box1">
-              <img src="images/headline04.png" alt="" class="img_fluid">
-            </div>
-            <div class="box2">
-              <p class="red">12456789</p>
-              <p class="red">12456789</p>
-              <p class="red">12456789</p>
-              <p class="red">12456789</p>
-              <p class="red">12456789</p>
-
-            </div>
-          </div>
-          <img src="images/index_sention4.png" alt="" class="img_fluid sention4_bg ">
-  
-        </section>
-      </div> -->
-
       <div class="wrapper">
         <section id="games">
-          <div class="headline">
+          <div class="headline position-absolute">
             <img src="images/headline01.png" alt="" class="img_fluid" />
           </div>
-          <p>
-            Lorem ipsum is a pseudo-Latin text used in web design, typography,
-            layout, and printing in place of English to emphasise design
-            elements over content. It's also called placeholder (or filler)
-            text. It's a convenient tool for mock-ups. It helps to outline the
-            visual elements of a document or presentation, eg typography, font,
-            or layout. Lorem ipsum is mostly a part of a Latin text by the
-            classical author and philosopher Cicero. Its words and letters have
-            been changed by addition or removal, so to deliberately render its
-            content nonsensical; it's not genuine, correct, or comprehensible
-            Latin anymore. While lorem ipsum's still resembles classical Latin,
-            it actually has no meaning whatsoever. As Cicero's text doesn't
-            contain the letters K, W, or Z, alien to latin, these, and others
-            are often inserted randomly to mimic the typographic appearence of
-            European languages, as are digraphs not to be found in the original.
-            In a professional context it often happens that private or corporate
-            clients corder a publication to be made and presented with the
-            actual content still not being ready. Think of a news blog that's
-            filled with content hourly on the day of going live. However,
-            reviewers tend to be distracted by comprehensible content, say, a
-            random text copied from a newspaper or the internet. The are likely
-            to focus on the text, disregarding the layout and its elements.
-            Besides, random text risks to be unintendedly humorous or offensive,
-            an unacceptable risk in corporate environments. Lorem ipsum and its
-            many variants have been employed since the early 1960ies, and quite
-            likely since the sixteenth century.
-          </p>
-        </section>
-        <section id="profession">
-          <div class="headline">
-            <img src="images/headline02.png" alt="" class="img_fluid" />
+          
+          <div class="game_slider d-flex row position-absolute w-100">
+            <div class="aside col-2 ">
+              <ul>
+                <li>全部</li>
+                <li>+ 热门</li>
+                <li>+ 牛牛</li>
+                <li>+ 百人</li>
+                <li>+ 电子</li>
+              </ul>
+            </div>
+            <div class="slider col">
+
+            </div>
           </div>
-          <p>
-            Lorem ipsum is a pseudo-Latin text used in web design, typography,
-            layout, and printing in place of English to emphasise design
-            elements over content. It's also called placeholder (or filler)
-            text. It's a convenient tool for mock-ups. It helps to outline the
-            visual elements of a document or presentation, eg typography, font,
-            or layout. Lorem ipsum is mostly a part of a Latin text by the
-            classical author and philosopher Cicero. Its words and letters have
-            been changed by addition or removal, so to deliberately render its
-            content nonsensical; it's not genuine, correct, or comprehensible
-            Latin anymore. While lorem ipsum's still resembles classical Latin,
-            it actually has no meaning whatsoever. As Cicero's text doesn't
-            contain the letters K, W, or Z, alien to latin, these, and others
-            are often inserted randomly to mimic the typographic appearence of
-            European languages, as are digraphs not to be found in the original.
-            In a professional context it often happens that private or corporate
-            clients corder a publication to be made and presented with the
-            actual content still not being ready. Think of a news blog that's
-            filled with content hourly on the day of going live. However,
-            reviewers tend to be distracted by comprehensible content, say, a
-            random text copied from a newspaper or the internet. The are likely
-            to focus on the text, disregarding the layout and its elements.
-            Besides, random text risks to be unintendedly humorous or offensive,
-            an unacceptable risk in corporate environments. Lorem ipsum and its
-            many variants have been employed since the early 1960ies, and quite
-            likely since the sixteenth century.
-          </p>
-          <p>
-            Lorem ipsum is a pseudo-Latin text used in web design, typography,
-            layout, and printing in place of English to emphasise design
-            elements over content. It's also called placeholder (or filler)
-            text. It's a convenient tool for mock-ups. It helps to outline the
-            visual elements of a document or presentation, eg typography, font,
-            or layout. Lorem ipsum is mostly a part of a Latin text by the
-            classical author and philosopher Cicero. Its words and letters have
-            been changed by addition or removal, so to deliberately render its
-            content nonsensical; it's not genuine, correct, or comprehensible
-            Latin anymore. While lorem ipsum's still resembles classical Latin,
-            it actually has no meaning whatsoever. As Cicero's text doesn't
-            contain the letters K, W, or Z, alien to latin, these, and others
-            are often inserted randomly to mimic the typographic appearence of
-            European languages, as are digraphs not to be found in the original.
-            In a professional context it often happens that private or corporate
-            clients corder a publication to be made and presented with the
-            actual content still not being ready. Think of a news blog that's
-            filled with content hourly on the day of going live. However,
-            reviewers tend to be distracted by comprehensible content, say, a
-            random text copied from a newspaper or the internet. The are likely
-            to focus on the text, disregarding the layout and its elements.
-            Besides, random text risks to be unintendedly humorous or offensive,
-            an unacceptable risk in corporate environments. Lorem ipsum and its
-            many variants have been employed since the early 1960ies, and quite
-            likely since the sixteenth century.
-          </p>
-          <p>
-            Lorem ipsum is a pseudo-Latin text used in web design, typography,
-            layout, and printing in place of English to emphasise design
-            elements over content. It's also called placeholder (or filler)
-            text. It's a convenient tool for mock-ups. It helps to outline the
-            visual elements of a document or presentation, eg typography, font,
-            or layout. Lorem ipsum is mostly a part of a Latin text by the
-            classical author and philosopher Cicero. Its words and letters have
-            been changed by addition or removal, so to deliberately render its
-            content nonsensical; it's not genuine, correct, or comprehensible
-            Latin anymore. While lorem ipsum's still resembles classical Latin,
-            it actually has no meaning whatsoever. As Cicero's text doesn't
-            contain the letters K, W, or Z, alien to latin, these, and others
-            are often inserted randomly to mimic the typographic appearence of
-            European languages, as are digraphs not to be found in the original.
-            In a professional context it often happens that private or corporate
-            clients corder a publication to be made and presented with the
-            actual content still not being ready. Think of a news blog that's
-            filled with content hourly on the day of going live. However,
-            reviewers tend to be distracted by comprehensible content, say, a
-            random text copied from a newspaper or the internet. The are likely
-            to focus on the text, disregarding the layout and its elements.
-            Besides, random text risks to be unintendedly humorous or offensive,
-            an unacceptable risk in corporate environments. Lorem ipsum and its
-            many variants have been employed since the early 1960ies, and quite
-            likely since the sixteenth century.
-          </p>
+
+          <img src="images/index_sention1.png" class="img_fluid sention1_bg"/>
+
         </section>
+        <section id="profession ">
+          <div class="profession_flex ">
+            <div class="headline ">
+              <img src="images/headline02.png" alt="" class="img_fluid" />
+            </div>
+            <div class="profession_box d-flex">
+              <div class=" d-flex block_left">
+                <div class="block1 block ">
+                  <div class="b_content position-absolute">
+                    <h5 class="b_title  white_space">
+                      最坚固的 
+                      <span class="font2 white_space"> 防刷机制</span>
+                    </h5>
+                    <ul class="b_text font5">
+                      <li >东京大学数学系长邀合作</li>
+                      <li>3项JPO“特許”算法专利</li>
+                      <li>针对性设置防刷战略</li>
+                      <li>确保数据极度稳定</li>
+                      <li>保护用户及平台效益</li>
+                    </ul>
+                  </div>
+                  <img src="images/block1.png" alt="" class="img_fluid">  
+                </div>
+                <div class="block2 block" >
+                  <div class="b_content position-absolute">
+                    <h5 class="b_title  white_space">
+                      <span class="font2 white_space"> 客制化</span> 管理
+                    </h5>
+                    <ul class="b_text font5">
+                      <li >多域名、多线路、多站点 </li>
+                      <li>黑白名单管理 </li>
+                      <li>可视化运营数据 </li>
+                      <li>极简运营 </li>
+                      <li>极高效能</li>
+                    </ul>
+                  </div>
+                  <img src="images/block2.png" alt="" class="img_fluid">  
+                </div>
+              </div>
+              <div class="girl">
+                <img src="images/girl.png" alt="" class="img_fit " >
+              </div>
+
+              <div class=" d-flex block_right">
+                <div class="block3 block" >
+                  <div class="b_content position-absolute">
+                    <h5 class="b_title  white_space">
+                      行业顶尖  
+                      <span class="font2 white_space"> 智能AI</span>
+                    </h5>
+                    <ul class="b_text font5">
+                      <li>日本顶尖互联专家团队研发</li>
+                      <li>百亿次模拟学习</li>
+                      <li>合理调配及监控玩家行为 </li>
+                      <li>仿真拟人操作</li>
+                      <li>营造活跃刺激的游戏氛围</li>
+                    </ul>
+                  </div>
+                  <img src="images/block3.png" alt="" class="img_fluid">  
+                </div>
+                <div class="block4 block" >
+                  <div class="b_content position-absolute">
+                    <h5 class="b_title  white_space">
+                      <span class="font2 white_space"> 7*24小时</span> 专业技术支持
+                    </h5>
+                    <ul class="b_text font5">
+                      <li > 9位专家级技术顾问 </li>
+                      <li>7位高级产品经理 </li>
+                      <li>50人客服团队 </li>
+                      <li>全天候耐心提供技术支持</li>
+                    </ul>
+                  </div>
+                  <img src="images/block4.png" alt="" class="img_fluid">  
+                </div>
+            </div>
+          </div>
+          
+        </section>
+        
         <section id="efficient">
-          <div class="headline">
+          <div class="headline position-absolute">
             <img src="images/headline03.png" alt="" class="img_fluid" />
           </div>
-          <div class="progress_bar">
-            <img src="images/progress bar.png" alt="" class="img_fluid" />
+          <div class="efficient_info position-absolute">
+
+            <div class="progress_bar row">
+              <div class="col-1"></div>
+              <img src="images/progress bar.png" alt="" class="img_fluid col-8" />
+              <div class="col"></div>
+            </div>
           </div>
+         
           <img src="images/index_sention3.png" class="img_fluid sention3_bg"/>
         </section>
 
@@ -247,9 +232,6 @@
             <img src="images/headline04.png" alt="" class="img_fluid" />
           </div>
           <div class="contact_box position-absolute row">
-            <!-- <div class="headline col">
-              <img src="images/headline04.png" alt="" class="img_fluid" />
-            </div> -->
             <div class="col-2"></div>
             <ul class="contact_info col-3 d-flex flex-column">
               <li class=" QR"><img src="images/QR.png" alt="" class="img_fluid QRcode"></li>
@@ -278,36 +260,23 @@
   ></script>
   <script src="http://zeptojs.com/zepto.min.js"></script>
   <script src="js/vegas/vegas.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     //footer year
     $("#footer_year").append(
       "<span>&copy; 2020 ~ " + new Date().getFullYear() + "</span>"
     );
-    //     $("#top").vegas({
-    //     delay: 7000,
-    //     timer: false,
-    //     shuffle: true,
-    //     firstTransition: 'fade',
-    //     firstTransitionDuration: 5000,
-    //     transition: 'slideDown2',
-    //     transitionDuration: 2000,
-    //     slides: [
-    //         { src: '/img/slide1.jpg' },
-    //         { src: '/img/slide2.jpg' },
-    //         { src: '/img/slide3.jpg' },
-    //         { src: '/img/slide4.jpg' }
-    //     ]
-    // });
+ 
+ //vegas
     $("#top").vegas({
       slides: [
         {
           video: {
-            src: ["video/Steampunk.mp4"],
+            src: ["video/index_video_960.mp4"],
             loop: true,
             mute: true,
           },
-        },
-        { src: 'images/bg.png' }
+        }
       ],
     });
   </script>

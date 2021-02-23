@@ -2,6 +2,7 @@
     width: 100%;
     height: 95vh;
     background-color: aquamarine;
+    margin-bottom: 5vh;
 }
 .headnav{
     height: 10%;
@@ -11,13 +12,11 @@
     flex-flow: row;
     /* justify-content: space-between; */
     top: 0;
-    z-index: 97;
+    z-index: 1;
+    transform: translateX(15px);
 }
 .logo{
-    /* width: 10rem; */
-    /* height: 5rem; */
     margin: 0.5rem;
-    flex: 8;
 }
 .navbar{
     /* background-color: burlywood; */
@@ -26,9 +25,14 @@
     padding-left: 0;
     /* padding-right: 1rem; */
     display: flex;
-    flex: 2;
+    /* flex: 2; */
+
 }
-.topnav{
+.navbar li{
+  text-align: center;
+  /* border: 1px solid cornflowerblue; */
+}
+/* .topnav{
     list-style:none;
     display: flex;
     flex-flow: row;
@@ -36,11 +40,9 @@
     align-items: center;
     margin: 0 auto;
     text-align: center;
-}
-ul.topnav li{
+} */
+/* ul.navbar li{
     flex: 1;
-    /* min-width: 0; */
-    /* white-space: nowrap; */
     padding: 1rem;
     font-size: .8rem;
     border: 1px solid cornflowerblue;
@@ -48,6 +50,14 @@ ul.topnav li{
     display: flex;
     flex-flow: column;
     justify-content: center;
+} */
+ul.navbar li a{
+  /* background-color: rgba(127, 255, 212, 0.514); */
+  font-weight: 700;
+  color: rgba(240, 255, 255, 0.7);
+}
+ul.navbar li a:hover span,ul.navbar li a:hover .dot{
+  color: #fff;
 }
 .dot{
   width: 5px;
@@ -112,13 +122,115 @@ section{
 }
 /* ---------------------------------------------------------- */
 #games{
-  background: no-repeat url("/images/index_sention1.png");
+  /* background: no-repeat url("/images/index_sention1.png");
   background-position: center;
+  background-size: cover; */
+  position: relative;
+
+}
+.game_slider{
+  top: 50%;
+  transform:translate(15px,-50%);
+  background-color: rgba(30, 102, 210, 0.397);
+
+}
+.slider{
+  background-color: rgba(210, 30, 186, 0.397);
+}
+/* ---------------------------------------------------------- */
+#profession{
+  /* position: relative; */
+  height: 90vh;
+  background-color: burlywood;
+}
+.profession_flex{
+  display: flex;
+  flex-flow: column;
+}
+.girl{
+  flex: 1.2;
+  padding: 1.5%;
+  /* max-width: 600px; */
+  margin: 2% auto 12%  auto;
+}
+.profession_box{
+  /* background-color: rgba(30, 210, 69, 0.397); */
+  /* top: 50%;
+  transform:translate(15px,-50%); */
+  background: no-repeat url("/images/index_sention2.png");
+  background-position-x:right;
+  background-position-y:bottom;
   background-size: cover;
+  /* padding: 2%; */
+  flex-flow: row;
+}
+.block_left,.block_right{
+  flex-flow: column;
+  flex: 1;
+}
+.block{
+  /* background-color: rgba(165, 42, 42, 0.486); */
+  position: relative;
+  /* padding: 5% 10% 5% 15%; */
+}
+.b_content{
+
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  top: 9%;
+  left: 15%;
+  /* left: 50%; */
+  /* transform:translateY(-50%); */
+  /* margin: 8%; */
+}
+.b_title{
+  padding: 10px 0;
+}
+.block1 .b_title{
+  border-bottom:2px solid #63e4ef;
+}
+/* .block2{
+  background: no-repeat url("/images/block2.png");
+  background-position: center;
+  background-size: contain;
+} */
+.block2 .b_title{
+  border-bottom:2px solid #f56e6e;
+}
+/* .block3{
+  background: no-repeat url("/images/block3.png");
+  background-position: center;
+  background-size: contain;
+} */
+.block3 .b_title{
+  border-bottom:2px solid #ffce5a;
+}
+/* .block4{
+  background: no-repeat url("/images/block4.png");
+  background-position: center;
+  background-size: contain;
+} */
+.block4 .b_title{
+  border-bottom:2px solid #b4a5ff;
+}
+.b_text{
+  list-style: none;
+  /* background-color: rgba(42, 165, 69, 0.164); */
+}
+.b_text li{
+  padding-top: 5px;
+  font-weight: 500;
 }
 /* ---------------------------------------------------------- */
 #efficient{
+  position: relative;
   z-index: 100;
+}
+.efficient_info{
+      /* background-color: rgba(210, 105, 30, 0.397); */
+      top: 50%;
+      transform:translateY(-50%);
 }
 
 /* ---------------------------------------------------------- */
@@ -138,7 +250,7 @@ section{
   overflow: hidden;
 }
 .contact_info{
-  padding: 8%;
+  padding: 7%;
   align-items: flex-start;
 }
 .contact_info li{
@@ -150,6 +262,7 @@ section{
     /* background-color: rgba(210, 105, 30, 0.397); */
 }
 .QR{
+  padding: 10px 0;
 }
 .tel,.mail,.skype,.twitter{
   flex: 1;
