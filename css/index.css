@@ -1,10 +1,10 @@
 .breakTime{
-  height: 10vh;
+  height: 50px;
 }
 
 .headnav{
     height: 10%;
-    width: 100%;
+    /* width: 100%; */
     /* background-color: rgba(165, 42, 42, 0.233); */
     display: flex;
     flex-flow: row;
@@ -25,18 +25,21 @@
   text-align: center;
   /* border: 1px solid cornflowerblue; */
 }
-ul.navbar li a{
+a.top_btn{
+  text-decoration: none;
+}
+ul a.linear{
   /* background-color: rgba(127, 255, 212, 0.514); */
   text-decoration: none;
   font-weight: 700;
   color: rgba(240, 255, 255, 0.7);
   transition: .5s;
 }
-ul.navbar li a:hover{
+ul.navbar li a:hover,.top_btn{
   color: #fff;
   text-shadow: 0px 0px 10px rgb(255 255 255);
 }
-ul.navbar li a:hover .dot{
+ul.navbar li a:hover .dot,.top_btn .dot{
   background-color: #fff;
   box-shadow: 1px -3px 39px 30px rgba(255 255 255,0.75);
 -webkit-box-shadow: 1px -3px 39px 30px rgba(255 255 255,0.75);
@@ -144,6 +147,7 @@ ul.topnav li span{
 section{
     /* background-color: cadetblue; */
     position: relative;
+    /* line-height: 0!important; */
 }
 .headline{
   /* width: 100%; */
@@ -252,20 +256,29 @@ section{
 	/* transform: rotate(-45deg); */
 	-webkit-animation: sdb07 2s infinite;
 }
+.carousel-indicators{
+  bottom: -50px;
+  /* background-color: blue; */
+}
 .pagination{
   margin: 3% auto ;
 }
-.pagination li {
+.carousel-indicators li {
   padding: 5px 10px;
   background-color: #8b8b8b;
   margin: 10px;
-  border-radius: 5px;
+  border-radius: 13px;
 }
-.pagination li.active{
+.carousel-indicators li.active{
     background-color: #ffae00;
-    padding: 5px 20px;
+    padding: 5px 20px; 
 }
-
+.carousel-control-prev, .carousel-control-next {
+  background: rgb(0, 0, 0);
+  height: 30px;
+  width: 30px;
+  top: 50%;
+}
 /* ---------------------------------------------------------- */
 #profession{
   /* position: relative; */
@@ -277,7 +290,7 @@ section{
   flex-flow: column;
 }
 .girl{
-  flex: 1.2;
+  /* flex: 1.2; */
   padding: 1.5%;
   /* max-width: 600px; */
   margin: 2% auto 12%  auto;
@@ -294,12 +307,21 @@ section{
 }
 .block_left,.block_right{
   flex-flow: column;
-  flex: 1;
+  justify-content: center;
+  align-items: center;
+  /* flex: 1; */
 }
 .block{
   /* background-color: rgba(165, 42, 42, 0.486); */
   position: relative;
   /* padding: 5% 10% 5% 15%; */
+  
+}
+.block2,.block3{
+  animation: blockMove 1.45s infinite;
+}
+.block1,.block4{
+  animation: blockMove2 1.6s infinite;
 }
 .b_content{
   display: flex;
@@ -313,6 +335,7 @@ section{
 }
 .block1 .b_title{
   border-bottom:2px solid #63e4ef;
+  
 }
 .block2 .b_title{
   border-bottom:2px solid #f56e6e;
@@ -335,11 +358,16 @@ section{
 #efficient{
   position: relative;
   z-index: 100;
+  line-height: 0!important;
 }
 .efficient_info{
       /* background-color: rgba(210, 105, 30, 0.397); */
       top: 50%;
       transform:translateY(-50%);
+}
+.progress_bar{
+  display: flex;
+  padding: 0 20% 0 5%;
 }
 
 /* ---------------------------------------------------------- */
@@ -383,7 +411,7 @@ section{
   background-position: center;
   background-size: contain;
   /* background-color: rgba(96, 210, 30, 0.397); */
-  padding: 20px 20%;
+  padding: 30px 0;
   /* margin:0 10%; */
 }
 .contact_info{
@@ -409,8 +437,8 @@ section{
   /* background-color: rgba(222, 184, 135, 0.479); */
   display: flex;
   flex-flow: column;
-  /* margin: 0 auto; */
-  padding: 5%;
+  margin: 0 auto;
+  /* padding: 5%; */
   /* flex-flow: column; */
 }
 .table_content li{
@@ -449,4 +477,27 @@ section{
   /* z-index: 50; */
   text-align: center;
   /* display: fixed; */
+}
+/* ---------------------------------------------------------- */
+@keyframes blockMove {
+  0%{
+      top:-10px;
+  }
+  50%{
+      top:0px;
+  }
+  100%{
+      top:-10px;
+  }
+}
+@keyframes blockMove2 {
+  0%{
+      top:-10px;
+  }
+  50%{
+      top:0px;
+  }
+  100%{
+      top:-10px;
+  }
 }
