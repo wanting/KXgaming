@@ -150,5 +150,18 @@ h6 {
 }
 
 /* ---------------------------------------------------------- */
-
+.mobile{
+  display: none !important;
+}
+.web{
+  display:block ;
+}
+@media screen and (max-width: 1024px){
+  .web{
+    display: none!important;
+  }
+  .mobile{
+    display:block !important;
+  }
+}
 /* ---------------------------------------------------------- */

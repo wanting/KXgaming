@@ -25,42 +25,55 @@
   <body class="">
     <main class="">
       <nav class="headnav position-absolute row w-100">
-        <div class="logo col-2">
+        <div class="logo col-2 d-flex align-self-start">
           <img src="images/logo.svg" alt="" class="img_fluid" >
         </div>
         <div class="col"></div>
-        <ul class="col-5 navbar row">
-          <li class="white col">
-            <a href="#" class="top_btn">
-              <span>主页</span>
-            <div class="dot"></div>
-            </a>
-          </li>
-          <li class="white col">
-            <a href="#games" class="linear">
-              <span>游戏</span>
-            <div class="dot"></div>
-            </a>
-          </li>
-          <li class="white col">
-            <a href="#profession" class="linear">
-              <span>服务优势</span>
-              <div class="dot"></div>
-            </a>
-          </li>
-          <li class="white col">
-            <a href="#efficient" class="linear">
-              <span>合作流程</span>
-              <div class="dot"></div>
-            </a>
-          </li>
-          <li class="white col">
-            <a href="#contact" class="linear">
-            <span>联系我们</span>
-            <div class="dot"></div>
-            </a>
-          </li>
-        </ul>
+        <div class="navbar_menu col-7 col-lg-5  ">
+          <div class=" navbar_m ">
+            <ul class="d-flex nav_mobile">
+              <li>1</li>
+              <li class="bg_red">2</li>
+              <li>3</li>
+            </ul>
+          </div>
+          <div class="navbar_w ">
+            <ul class="navbar row ">
+              <li class="white col">
+                <a href="#" class="top_btn">
+                  <span>主页</span>
+                <div class="dot"></div>
+                </a>
+              </li>
+              <li class="white col">
+                <a href="#games" class="linear">
+                  <span>游戏</span>
+                <div class="dot"></div>
+                </a>
+              </li>
+              <li class="white col">
+                <a href="#profession" class="linear">
+                  <span>服务优势</span>
+                  <div class="dot"></div>
+                </a>
+              </li>
+              <li class="white col">
+                <a href="#efficient" class="linear">
+                  <span>合作流程</span>
+                  <div class="dot"></div>
+                </a>
+              </li>
+              <li class="white col">
+                <a href="#contact" class="linear">
+                <span>联系我们</span>
+                <div class="dot"></div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
       </nav>
       <section id="top" class="">
         <a href="#games" id="scroll" class="linear">
@@ -73,16 +86,16 @@
       </section>
 
       <div class="wrapper">
-        <div class="breakTime"></div>
         <section id="games">
           <div class="game_flex">
             <div class="headline ">
-              <img src="images/headline01.png" alt="" class="img_fluid" />
+              <img src="images/headline01.png" alt="" class="img_fluid web" />
+              <img src="images/headline01_m.png" alt="" class="img_fluid mobile" />
             </div>
             
             <div class="game_slider d-flex  ">
               <div class="aside  ">
-                <ul class="tab">
+                <ul class="tab d-flex">
                   <li class="tab_btn">
                     <a href="#">
                       <img src="images/tab1_active.png" class="img_fluid"/>
@@ -108,19 +121,14 @@
                       <img src="images/tab5.png" class="img_fluid"/>
                     </a>
                   </li>
-                  <!-- <li>全部</li>
-                  <li>+ 热门</li>
-                  <li>+ 牛牛</li>
-                  <li>+ 百人</li>
-                  <li>+ 电子</li> -->
                 </ul>
               </div>
               <div class="slider swiper-container position-relative">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                   <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active rounded-pill"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1" class="rounded-pill"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2" class="rounded-pill"></li>
                   </ol>
                   <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -265,59 +273,7 @@
                     <span class="sr-only">Next</span>
                   </a>
                 </div>
-                <!-- <div class="slider_btn position-absolute">
-                  <div  class="prev"><div class="arrow"></div></div>
-                  <div  class="next"><div class="arrow"></div></div>
-                </div>
-                <div class="swiper-wrapper ">
-                  <ul class="all_1 slider_main">
-                    <li class="swiper-slide slide_column">
-                      <a href="#">
-                        <img src="images/icon/cznn.png" alt="" class="img_fluid">
-                      </a>
-                      <a href="#">
-                        <img src="images/icon/lh.png" alt="" class="img_fluid">
-                      </a>
-                    </li>
-                    <li class="swiper-slide slide_column">
-                      <a href="#">
-                        <img src="images/icon/bjl.png" alt="" class="img_fluid">
-                      </a>
-                      <a href="#">
-                        <img src="images/icon/cz4n.png" alt="" class="img_fluid">
-                      </a>
-                    </li>
-                    <li class="swiper-slide slide_column">
-                      <a href="#">
-                        <img src="images/icon/ddj.png" alt="" class="img_fluid">
-                      </a>
-                      <a href="#">
-                        <img src="images/icon/gflower.png" alt="" class="img_fluid">
-                      </a>
-                    </li>
-                    <li class="swiper-slide slide_column">
-                      <a href="#">
-                        <img src="images/icon/21.png" alt="" class="img_fluid">
-                      </a>
-                      <a href="#">
-                        <img src="images/icon/28.png" alt="" class="img_fluid">
-                      </a>
-                    </li>
-                    <li class="swiper-slide slide_column">
-                      <a href="#">
-                        <img src="images/icon/redblack.png" alt="" class="img_fluid">
-                      </a>
-                      <a href="#">
-                        <img src="images/icon/qz6n_s.png" alt="" class="img_fluid">
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <ul class="pagination">
-                  <li class="active"></li>
-                  <li></li>
-                  <li></li>
-                </ul> -->
+
                 <div class="pagination"></div>
               </div>
             </div>
@@ -331,10 +287,11 @@
         <section id="profession">
           <div class="profession_flex ">
             <div class="headline ">
-              <img src="images/headline02.png" alt="" class="img_fluid" />
+              <img src="images/headline02.png" alt="" class="img_fluid web" />
+              <img src="images/headline02_m.png" alt="" class="img_fluid mobile" />
             </div>
             <div class="profession_box d-flex row">
-              <div class=" d-flex block_left col-4">
+              <div class=" d-flex block_left col-6 col-lg-4">
                 <div class="block1 block ">
                   <div class="b_content position-absolute">
                     <h5 class="b_title  white_space">
@@ -367,11 +324,11 @@
                   <img src="images/block2.png" alt="" class="img_fluid">  
                 </div>
               </div>
-              <div class="girl col">
+              <div class="girl col-6 col-lg-4 web">
                 <img src="images/girl.png" alt="" class="img_fit " >
               </div>
 
-              <div class=" d-flex block_right col-4">
+              <div class=" d-flex block_right col-6 col-lg-4">
                 <div class="block3 block" >
                   <div class="b_content position-absolute">
                     <h5 class="b_title  white_space">
@@ -409,7 +366,9 @@
         <div class="breakTime"></div>
         <section id="efficient">
           <div class="headline position-absolute">
-            <img src="images/headline03.png" alt="" class="img_fluid" />
+            <img src="images/headline03.png" alt="" class="img_fluid web" />
+            <img src="images/headline03_m.png" alt="" class="img_fluid mobile" />
+
           </div>
           <div class="efficient_info position-absolute">
 
@@ -420,28 +379,30 @@
             </div>
           </div>
          
-          <img src="images/index_sention3.png" class="img_fluid sention3_bg">
+          <img src="images/index_sention3_f.png" class="img_fluid sention3_bg">
         </section>
 
         <section id="contact">
           <!-- <div class="headline position-absolute">
-            <img src="images/headline04.png" alt="" class="img_fluid" />
+            <img src="images/headline04.png" alt="" class="img_fluid web" />
+            <img src="images/headline04_m.png" alt="" class="img_fluid mobile" />
           </div> -->
-          <div class="contact_flex  position-absolute">
-            <!-- <div class="headline ">
-              <img src="images/headline04.png" alt="" class="img_fluid" />
+          <div class="contact_flex  ">
+            <div class="headline ">
+              <img src="images/headline04.png" alt="" class="img_fluid web" />
+            <img src="images/headline04_m.png" alt="" class="img_fluid mobile" />
             </div>
-            <div class="contact_box row">
-              <div class="col-1"></div>
-              <ul class="contact_info  d-flex flex-column col-2">
+            <div class="contact_box ">
+              <!-- <div class="col-1"></div> -->
+              <ul class="contact_info  d-flex flex-column ">
                 <li class=" QR"><img src="images/QR.png" alt="" class="img_fluid QRcode"></li>
                 <li class=" tel"><a class="row" href="#"><img src="images/tel.png" class="contact_icon " alt=""><span class="col-5 white font5">+86 16794638479</span></a></li>
                 <li class=" mail"><a class="row"  href="#"><img src="images/mail.png" class="contact_icon " alt=""><span class="col-5 white font5">ieuithiio@gmail.com</span></a></li>
                 <li class=" skype"><a class="row"  href="#"><img src="images/skype.png" class="contact_icon " alt=""><span class="col-5 white font5">点此与KX商务交谈</span></a></li>
                 <li class=" twitter"><a class="row"  href="#"><img src="images/twitter.png"  alt="" class="contact_icon " alt=""><span class="col-5 white font5">ieuithiio@gmail.com</span></a></li>
               </ul>
-              <div class="table col row">
-                <div class="table_content col-6">
+              <div class="table ">
+                <!-- <div class="table_content col-6">
                   <p>如您需要咨询，请填写下面表格，我们将尽快与您联系：</p>
                   <form>
                     <div class="form-row">
@@ -475,9 +436,10 @@
 
                   </form>
 
-              </div>
+              </div> -->
+              <img src="images/table.png" alt="" class="img_fit">
             </div>
-          </div> -->
+          </div>
 
 
         </div>
@@ -487,7 +449,9 @@
           <footer class="footer  white position-absolute">
             <p class="font_family font-weight-light font7 mb-0">Copyright <span id="footer_year"></span> All Rights Reserved. 凯旋棋牌版权所有</p> 
           </footer>
-          <img src="images/index_sention4.png" class="img_fluid sention4_bg"/>
+
+          <!-- <img src="images/index_sention4_2.png" class="img_fluid sention4_bg2"/>
+          <img src="images/index_sention4_1.png" class="img_fluid sention4_bg"/> -->
         </section>
       </div>
     </main>
@@ -521,7 +485,7 @@
     //a liner
     $('.linear').on('click', function(e) {
     e.preventDefault();
-    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 700, 'linear');
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
     });
 
     //swiper
