@@ -481,7 +481,17 @@ section{
   display: flex;
   padding: 0 20% 0 5%;
 }
-
+.progress_bar_img{
+  max-height: 450px;
+}
+@media screen and (max-width: 1024px){
+  .efficient_info{
+    right: 0;
+  }
+  .progress_bar{
+    padding: 20% 0 20% 20% ;
+  }
+}
 /* ---------------------------------------------------------- */
 #contact{
   /* max-height: 728px; */
