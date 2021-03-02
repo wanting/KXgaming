@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="zh-Hans" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KX Gaming</title>
+
+    <link rel="stylesheet" href="js/vegas/vegas.min.css" />
+    <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <!-- <link rel="stylesheet" href="dist/css/swiper-bundle.min.css"> -->
+  <link rel="stylesheet" href="css/all.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/customer.css" />
+
+  </head>
+  <body class="">
+    <main class="">
+      <nav class="headnav position-absolute row w-100">
+        <div class="logo col-5 col-sm-3 d-flex align-self-start">
+          <img src="images/logo.svg" alt="" class="img_fluid" >
+        </div>
+        <div class="col web"></div>
+        <div class="navbar_menu col-7 col-lg-5  ">
+          <div class=" navbar_m transition">
+            <div class="bar bar1 transition"></div>
+            <div class="bar bar2 transition"></div>
+            <div class="bar bar3 transition"></div>
+            <ul class="transition">
+              <li id="mhome" class="one">
+                <a class="list-tab linear" href="#"><span>主页</span></a>
+              </li>
+              <li id="mgames" class="two">
+                <a class="list-tab linear" href="#games"
+                  ><span>游戏</span></a
+                >
+              </li>
+              <li id="mprofession" class="three">
+                <a class="list-tab linear" href="#profession"
+                  ><span>服务优势</span></a
+                >
+              </li>
+              <li id="mefficient" class="four">
+                <a class="list-tab linear" href="#efficient"
+                  ><span>合作流程</span></a
+                >
+              </li>
+              <li id="mcontact" class="five">
+                <a class="list-tab linear" href="#contact"><span>联系我们</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar_w ">
+            <ul class="navbar row ">
+              <li class="white col">
+                <a href="#" class="top_btn">
+                  <span class="white_space">主页</span>
+                <div class="dot"></div>
+                </a>
+              </li>
+              <li class="white col">
+                <a href="#games" class="linear">
+                  <span class="white_space">游戏</span>
+                <div class="dot"></div>
+                </a>
+              </li>
+              <li class="white col">
+                <a href="#profession" class="linear">
+                  <span class="white_space">服务优势</span>
+                  <div class="dot"></div>
+                </a>
+              </li>
+              <li class="white col">
+                <a href="#efficient" class="linear">
+                  <span class="white_space">合作流程</span>
+                  <div class="dot"></div>
+                </a>
+              </li>
+              <li class="white col">
+                <a href="#contact" class="linear">
+                <span class="white_space">联系我们</span>
+                <div class="dot"></div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+      </nav>
+      <section id="top" class="">
+        <a href="#games" id="scroll" class="linear">
+          <span></span>
+          <span></span>
+          <span></span>
+          Scroll
+        </a>
+        <img src="images/top.png" class="top_cover img_fluid position-absolute"/>
+      </section>
+
+      <div class="wrapper">
+        <section id="games">
+          <div class="game_flex">
+            <div class="headline ">
+              <img src="images/headline01.png" alt="" class="img_fluid web" />
+              <img src="images/headline01_m.png" alt="" class="img_fluid mobile" />
+            </div>
+            
+            <div class="game_slider d-flex  ">
+              <div class="aside  ">
+                <ul id="objItem" class="tab d-flex">
+                  <li class="tab_btn">
+                    <a href="#">
+                      <img id="tab1" src="images/tab1_active.png" class="img_fluid"/>
+                    </a>
+                  </li>
+                  <li class="tab_btn">
+                    <a href="#">
+                      <img id="tab2" src="images/tab2.png" class="img_fluid"/>
+                    </a>
+                  </li>
+                  <li class="tab_btn">
+                    <a href="#">
+                      <img id="tab3" src="images/tab3.png" class="img_fluid"/>
+                    </a>
+                  </li>
+                  <li class="tab_btn">
+                    <a href="#">
+                      <img id="tab4" src="images/tab4.png" class="img_fluid"/>
+                    </a>
+                  </li>
+                  <li class="tab_btn">
+                    <a href="#">
+                      <img id="tab5" src="images/tab5.png" class="img_fluid"/>
+                    </a>
+                  </li>
+                </ul>
+
+              </div>
+              <div id="ltab1" class=" slider swiper-container position-relative">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active rounded-pill"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1" class="rounded-pill"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2" class="rounded-pill"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <ul class="all_1 slider_main">
+                        <li class="swiper-slide slide_column">
+                          <a href="#">
+                            <img src="images/icon/cznn.png" alt="" class="img_fluid">
+                          </a>
+                          <a href="#">
+                            <img src="images/icon/lh.png" alt="" class="img_fluid">
+                          </a>
+                        </li>
+                        <li class="swiper-slide slide_column">
+                          <a href="#">
+                            <img src="images/icon/bjl.png" alt="" class="img_fluid">
+                          </a>
+                          <a href="#">
+                            <img src="images/icon/cz4n.png" alt="" class="img_fluid">
+                          </a>
+                        </li>
+                        <li class="swiper-slide slide_column">
+                          <a href="#">
+                            <img src="images/icon/ddj.png" alt="" class="img_fluid">
+                          </a>
+                          <a href="#">
+                            <img src="images/icon/gflower.png" alt="" class="img_fluid">
+                          </a>
+                        </li>
+                        <li class="swiper-slide slide_column">
+                          <a href="#">
+                            <img src="images/icon/21.png" alt="" class="img_fluid">
+                          </a>
+                          <a href="#">
+                            <img src="images/icon/28.png" alt="" class="img_fluid">
+                          </a>
+                        </li>
+                        <li class="swiper-slide slide_column">
+                          <a href="#">
+                            <img src="images/icon/redblack.png" alt="" class="img_fluid">
+                          </a>
+                          <a href="#">
+                            <img src="images/icon/qz6n_s.png" alt="" class="img_fluid">
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="carousel-item">
+                      <ul class="all_2 slider_main">
+                        <li class="swiper-slide slide_column">
+                          <a href="#">
+                            <img src="images/icon/pocker.png" alt="" class="img_fluid">
+                          </a>
+                          <a href="#">
+                            <img src="images/icon/sang.png" alt="" class="img_fluid">
+                          </a>
+                        </li>
+                        <li class="swiper-slide slide_column">
+                          <a href="#">
+                            <img src="images/icon/fish.png" alt="" class="img_fluid">
+                          </a>
+                          <a href="#">
+                            <img src="images/icon/lznn_s.png" alt="" class="img_fluid">
+                          </a>
+                        </li>
+                        <li class="swiper-slide slide_column">
+                          <a href="#">
+                            <img src="images/icon/mj.png" alt="" class="img_fluid">
+                          </a>
+                          <a href="#">
+                            <img src="images/icon/bnnn.png" alt="" class="img_fluid">
+                          </a>
+                        </li>
+                        <li class="swiper-slide slide_column">
+                          <a href="#">
+                            <img src="images/icon/32gflower.png" alt="" class="img_fluid">
+                          </a>
+                          <a href="#">
+                            <img src="images/icon/cz9_s.png" alt="" class="img_fluid">
+                          </a>
+                        </li>
+                        <li class="swiper-slide slide_column">
+                          <a href="#">
+                            <img src="images/icon/10.png" alt="" class="img_fluid">
+                          </a>
+                          <a href="#">
+                            <img src="images/icon/cz21_s.png" alt="" class="img_fluid">
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="carousel-item">
+                      <ul class="all_3 slider_main">
+                        <li class="swiper-slide slide_column">
+                          <a href="#">
+                            <img src="images/icon/cz3g.png" alt="" class="img_fluid">
+                          </a>
+                          <a href="#">
+                            <img src="images/icon/tbnn.png" alt="" class="img_fluid">
+                          </a>
+                        </li>
+                        <li class="swiper-slide slide_column">
+                          <a href="#">
+                            <img src="images/icon/cz53.png" alt="" class="img_fluid">
+                          </a>
+                          <a href="#">
+                            <img src="images/icon/13.png" alt="" class="img_fluid">
+                          </a>
+                        </li>
+                        <li class="swiper-slide slide_column">
+                          <a href="#">
+                            <img src="images/icon/run.png" alt="" class="img_fluid">
+                          </a>
+                          <a href="#">
+                            <img src="images/icon/bnsb.png" alt="" class="img_fluid">
+                          </a>
+                        </li>
+                        <li class="swiper-slide slide_column">
+                          <a href="#">
+                            <img src="images/icon/dance.png" alt="" class="img_fluid">
+                          </a>
+                          <a href="#">
+                            <img src="images/icon/hldn_s.png" alt="" class="img_fluid">
+                          </a>
+                        </li>
+                        <li class="swiper-slide slide_column">
+                          <a href="#">
+                            <img src="images/icon/fruit.png" alt="" class="img_fluid">
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+
+                <div class="pagination"></div>
+              </div>
+              <div id="ltab2" style="display: none;" class=" slider swiper-container position-relative">
+                <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active rounded-pill"></li>
+                    <li data-target="#carouselExampleIndicators2" data-slide-to="1" class="rounded-pill"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <ul class="all_1 slider_main">
+                        <li class="swiper-slide slide_column">
+                          <a href="#">
+                            <img src="images/icon/cznn.png" alt="" class="img_fluid">
+                          </a>
+                          <a href="#">
+                            <img src="images/icon/lh.png" alt="" class="img_fluid">
+                          </a>
+                        </li>
+                        <li class="swiper-slide slide_column">
+                          <a href="#">
+                            <img src="images/icon/bjl.png" alt="" class="img_fluid">
+                          </a>
+                          <a href="#">
+                            <img src="images/icon/cz4n.png" alt="" class="img_fluid">
+                          </a>
+                        </li>
+                        <li class="swiper-slide slide_column">
+                          <a href="#">
+                            <img src="images/icon/ddj.png" alt="" class="img_fluid">
+                          </a>
+                          <a href="#">
+                            <img src="images/icon/gflower.png" alt="" class="img_fluid">
+                          </a>
+                        </li>
+                        <li class="swiper-slide slide_column">
+                          <a href="#">
+                            <img src="images/icon/21.png" alt="" class="img_fluid">
+                          </a>
+                          <a href="#">
+                            <img src="images/icon/28.png" alt="" class="img_fluid">
+                          </a>
+                        </li>
+                        <li class="swiper-slide slide_column">
+                          <a href="#">
+                            <img src="images/icon/redblack.png" alt="" class="img_fluid">
+                          </a>
+                          <a href="#">
+                            <img src="images/icon/qz6n_s.png" alt="" class="img_fluid">
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="carousel-item">
+                      <ul class="all_2 slider_main">
+                        <li class="swiper-slide slide_column">
+                          <a href="#">
+                            <img src="images/icon/pocker.png" alt="" class="img_fluid">
+                          </a>
+                          <a href="#">
+                            <img src="images/icon/sang.png" alt="" class="img_fluid">
+                          </a>
+                        </li>
+                        <li class="swiper-slide slide_column">
+                          <a href="#">
+                            <img src="images/icon/fish.png" alt="" class="img_fluid">
+                          </a>
+                          <a href="#">
+                            <img src="images/icon/lznn_s.png" alt="" class="img_fluid">
+                          </a>
+                        </li>
+                        <li class="swiper-slide slide_column">
+                          <a href="#">
+                            <img src="images/icon/mj.png" alt="" class="img_fluid">
+                          </a>
+                          <a href="#">
+                            <img src="images/icon/bnnn.png" alt="" class="img_fluid">
+                          </a>
+                        </li>
+                        <li class="swiper-slide slide_column">
+                          <a href="#">
+                            <img src="images/icon/32gflower.png" alt="" class="img_fluid">
+                          </a>
+                          <a href="#">
+                            <img src="images/icon/cz9_s.png" alt="" class="img_fluid">
+                          </a>
+                        </li>
+                        <li class="swiper-slide slide_column">
+                          <a href="#">
+                            <img src="images/icon/10.png" alt="" class="img_fluid">
+                          </a>
+                          <a href="#">
+                            <img src="images/icon/cz21_s.png" alt="" class="img_fluid">
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+
+                <div class="pagination"></div>
+              </div>
+              <div id="ltab3" style="display: none;" class=" slider swiper-container position-relative">
+                <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active rounded-pill"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <ul class="all_1 slider_main">
+                        <li class="swiper-slide slide_column">
+                          <a href="#">
+                            <img src="images/icon/cznn.png" alt="" class="img_fluid">
+                          </a>
+                          <a href="#">
+                            <img src="images/icon/lh.png" alt="" class="img_fluid">
+                          </a>
+                        </li>
+                        <li class="swiper-slide slide_column">
+                          <a href="#">
+                            <img src="images/icon/bjl.png" alt="" class="img_fluid">
+                          </a>
+                          <a href="#">
+                            <img src="images/icon/cz4n.png" alt="" class="img_fluid">
+                          </a>
+                        </li>
+                        <li class="swiper-slide slide_column">
+                          <a href="#">
+                            <img src="images/icon/ddj.png" alt="" class="img_fluid">
+                          </a>
+                          <a href="#">
+                            <img src="images/icon/gflower.png" alt="" class="img_fluid">
+                          </a>
+                        </li>
+                        <li class="swiper-slide slide_column">
+                          <a href="#">
+                            <img src="images/icon/21.png" alt="" class="img_fluid">
+                          </a>
+                          <a href="#">
+                            <img src="images/icon/28.png" alt="" class="img_fluid">
+                          </a>
+                        </li>
+                        <li class="swiper-slide slide_column">
+                          <a href="#">
+                            <img src="images/icon/redblack.png" alt="" class="img_fluid">
+                          </a>
+                          <a href="#">
+                            <img src="images/icon/qz6n_s.png" alt="" class="img_fluid">
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+
+                <div class="pagination"></div>
+              </div>
+              <div id="ltab4" style="display: none;" class=" slider swiper-container position-relative">
+                <div id="carouselExampleIndicators4" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators4" data-slide-to="0" class="active rounded-pill"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <ul class="all_1 slider_main">
+                        <li class="swiper-slide slide_column">
+                          <a href="#">
+                            <img src="images/icon/cznn.png" alt="" class="img_fluid">
+                          </a>
+                          <a href="#">
+                            <img src="images/icon/lh.png" alt="" class="img_fluid">
+                          </a>
+                        </li>
+                        <li class="swiper-slide slide_column">
+                          <a href="#">
+                            <img src="images/icon/bjl.png" alt="" class="img_fluid">
+                          </a>
+                          <a href="#">
+                            <img src="images/icon/cz4n.png" alt="" class="img_fluid">
+                          </a>
+                        </li>
+                        <li class="swiper-slide slide_column">
+                          <a href="#">
+                            <img src="images/icon/ddj.png" alt="" class="img_fluid">
+                          </a>
+                          <a href="#">
+                            <img src="images/icon/gflower.png" alt="" class="img_fluid">
+                          </a>
+                        </li>
+                        <li class="swiper-slide slide_column">
+                          <a href="#">
+                            <img src="images/icon/21.png" alt="" class="img_fluid">
+                          </a>
+                          <a href="#">
+                            <img src="images/icon/28.png" alt="" class="img_fluid">
+                          </a>
+                        </li>
+                        <li class="swiper-slide slide_column">
+                          <a href="#">
+                            <img src="images/icon/redblack.png" alt="" class="img_fluid">
+                          </a>
+                          <a href="#">
+                            <img src="images/icon/qz6n_s.png" alt="" class="img_fluid">
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleIndicators4" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleIndicators4" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+
+                <div class="pagination"></div>
+              </div>
+              <div id="ltab5" style="display: none;" class=" slider swiper-container position-relative">
+                <div id="carouselExampleIndicators5" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators5" data-slide-to="0" class="active rounded-pill"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <ul class="all_1 slider_main">
+                        <li class="swiper-slide slide_column">
+                          <a href="#">
+                            <img src="images/icon/cznn.png" alt="" class="img_fluid">
+                          </a>
+                          <a href="#">
+                            <img src="images/icon/lh.png" alt="" class="img_fluid">
+                          </a>
+                        </li>
+                        <li class="swiper-slide slide_column">
+                          <a href="#">
+                            <img src="images/icon/bjl.png" alt="" class="img_fluid">
+                          </a>
+                          <a href="#">
+                            <img src="images/icon/cz4n.png" alt="" class="img_fluid">
+                          </a>
+                        </li>
+                        <li class="swiper-slide slide_column">
+                          <a href="#">
+                            <img src="images/icon/ddj.png" alt="" class="img_fluid">
+                          </a>
+                          <a href="#">
+                            <img src="images/icon/gflower.png" alt="" class="img_fluid">
+                          </a>
+                        </li>
+                        <li class="swiper-slide slide_column">
+                          <a href="#">
+                            <img src="images/icon/21.png" alt="" class="img_fluid">
+                          </a>
+                          <a href="#">
+                            <img src="images/icon/28.png" alt="" class="img_fluid">
+                          </a>
+                        </li>
+                        <li class="swiper-slide slide_column">
+                          <a href="#">
+                            <img src="images/icon/redblack.png" alt="" class="img_fluid">
+                          </a>
+                          <a href="#">
+                            <img src="images/icon/qz6n_s.png" alt="" class="img_fluid">
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleIndicators5" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleIndicators5" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+
+                <div class="pagination"></div>
+              </div>
+        </section>
+        <div class="breakTime"></div>
+        <section id="profession">
+          <div class="profession_flex ">
+            <div class="headline ">
+              <img src="images/headline02.png" alt="" class="img_fluid web" />
+              <img src="images/headline02_m.png" alt="" class="img_fluid mobile" />
+            </div>
+            <div class="profession_box d-flex row">
+              <div class=" d-flex block_left col-6 col-lg-4">
+                <div class="block1 block ">
+                  <div class="b_content position-absolute">
+                    <h5 class="b_title  white_space">
+                      最坚固的 
+                      <span class="font2 white_space"> 防刷机制</span>
+                    </h5>
+                    <ul class="b_text font5">
+                      <li >东京大学数学系长邀合作</li>
+                      <li>3项JPO“特許”算法专利</li>
+                      <li>针对性设置防刷战略</li>
+                      <li>确保数据极度稳定</li>
+                      <li>保护用户及平台效益</li>
+                    </ul>
+                  </div>
+                  <img src="images/block1.png" alt="" class="img_fluid">  
+                </div>
+                <div class="block2 block" >
+                  <div class="b_content position-absolute">
+                    <h5 class="b_title  white_space">
+                      <span class="font2 white_space"> 客制化</span> 管理
+                    </h5>
+                    <ul class="b_text font5">
+                      <li >多域名、多线路、多站点 </li>
+                      <li>黑白名单管理 </li>
+                      <li>可视化运营数据 </li>
+                      <li>极简运营 </li>
+                      <li>极高效能</li>
+                    </ul>
+                  </div>
+                  <img src="images/block2.png" alt="" class="img_fluid">  
+                </div>
+              </div>
+              <div class="girl col-6 col-lg-4 web">
+                <img src="images/girl.png" alt="" class="img_fit " >
+              </div>
+
+              <div class=" d-flex block_right col-6 col-lg-4">
+                <div class="block3 block" >
+                  <div class="b_content position-absolute">
+                    <h5 class="b_title  white_space">
+                      行业顶尖  
+                      <span class="font2 white_space"> 智能AI</span>
+                    </h5>
+                    <ul class="b_text font5">
+                      <li>日本顶尖互联专家团队研发</li>
+                      <li>百亿次模拟学习</li>
+                      <li>合理调配及监控玩家行为 </li>
+                      <li>仿真拟人操作</li>
+                      <li>营造活跃刺激的游戏氛围</li>
+                    </ul>
+                  </div>
+                  <img src="images/block3.png" alt="" class="img_fluid">  
+                </div>
+                <div class="block4 block" >
+                  <div class="b_content position-absolute">
+                    <h5 class="b_title  white_space">
+                      <span class="font2 white_space"> 7*24小时</span> 专业技术支持
+                    </h5>
+                    <ul class="b_text font5">
+                      <li > 9位专家级技术顾问 </li>
+                      <li>7位高级产品经理 </li>
+                      <li>50人客服团队 </li>
+                      <li>全天候耐心提供技术支持</li>
+                    </ul>
+                  </div>
+                  <img src="images/block4.png" alt="" class="img_fluid">  
+                </div>
+            </div>
+          </div>
+          
+        </section>
+        <div class="breakTime"></div>
+        <section id="efficient">
+          <div class="headline position-absolute">
+            <img src="images/headline03.png" alt="" class="img_fluid web" />
+            <img src="images/headline03_m.png" alt="" class="img_fit mobile" />
+
+          </div>
+          <div class="efficient_info position-absolute">
+
+            <div class="progress_bar ">
+              <!-- <div class="col-1"></div> -->
+              <img src="images/progress bar.png" alt="" class="img_fluid  web" />
+              <!-- <img src="images/progress bar_m.png" alt="" class="img_fluid  mobile progress_bar_img" /> -->
+
+              <!-- <div class="col"></div> -->
+            </div>
+          </div>
+          <img src="images/index_sention3_m.png" class="img_fluid sention3_bg mobile">
+          <img src="images/index_sention3_f.png" class="img_fluid sention3_bg web">
+        </section>
+
+        <section id="contact">
+          <!-- <div class="headline position-absolute">
+            <img src="images/headline04.png" alt="" class="img_fluid web" />
+            <img src="images/headline04_m.png" alt="" class="img_fluid mobile" />
+          </div> -->
+          <div class="contact_flex  ">
+            <div class="headline ">
+              <img src="images/headline04.png" alt="" class="img_fluid web" />
+            <img src="images/headline04_m.png" alt="" class="img_fluid mobile" />
+            </div>
+            <div class="contact_box ">
+              <!-- <div class="col-1"></div> -->
+              <ul class="contact_info  d-flex ">
+                <li class=" QR"><img src="images/QR.png" alt="" class="img_fluid QRcode"></li>
+
+                <ul class="d-flex flex-column pl-2 pr-2">
+                  <li class=" tel"><a class="row" href="#"><img src="images/tel.png" class="contact_icon " alt=""><span class="col-5 white font5">+86 16794638479</span></a></li>
+                  <li class=" mail"><a class="row"  href="#"><img src="images/mail.png" class="contact_icon " alt=""><span class="col-5 white font5">ieuithiio@gmail.com</span></a></li>
+                  <li class=" skype"><a class="row"  href="#"><img src="images/skype.png" class="contact_icon " alt=""><span class="col-5 white font5">点此与KX商务交谈</span></a></li>
+                  <li class=" twitter"><a class="row"  href="#"><img src="images/twitter.png"  alt="" class="contact_icon " alt=""><span class="col-5 white font5">ieuithiio@gmail.com</span></a></li>
+                </ul>
+              </ul>
+              <div class="table position-relative">
+                <div class="table_content  position-absolute">
+                  <p>如您需要咨询，请填写下面表格，我们将尽快与您联系：</p>
+                  <form>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="input">姓</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="input">名</label>
+                        <input type="text" class="form-control" id="inputPassword4" placeholder="">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="phone">电话</label>
+                      <input type="text" class="form-control" id="inputAddress" placeholder="">
+                    </div>
+                    <div class="form-group">
+                      <label class="font4" for="email">邮箱</label>
+                      <input type="email" class="y-contactUnderline form-control green" id="email" name="email" placeholder="">
+                      <small id="emailHelp" class="form-text"></small>
+                    </div>
+                    <div class="form-group">
+                      <label class="font4" for="t-area">内容</label><br>
+                      <textarea textarea class="textarea green" id="t-area" name="t-area" placeholder="Write something.."></textarea>
+                    </div>
+
+
+                    <div class="d-flex justify-content-center">
+                      <button type="submit" class="table_btn ">送出</button>
+                    </div>
+
+                  </form>
+
+              </div>
+              <img src="images/table.png" alt="" class="img_fit">
+            </div>
+          </div>
+
+
+        </div>
+
+
+
+          <footer class="footer  white position-absolute">
+            <p class="font_family font-weight-light font7 mb-0">Copyright <span id="footer_year"></span> All Rights Reserved. 凯旋棋牌版权所有</p> 
+          </footer>
+
+          <!-- <img src="images/index_sention4_2.png" class="img_fluid sention4_bg2"/>
+          <img src="images/index_sention4_1.png" class="img_fluid sention4_bg"/> -->
+        </section>
+      </div>
+    </main>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous" ></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+  <!-- <script src="/bootstrap/js/bootstrap.min.js"></script> -->
+  <script src="http://zeptojs.com/zepto.min.js"></script>
+  <script src="js/vegas/vegas.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    //footer year
+    $("#footer_year").append(
+      "<span>&copy; 2020 ~ " + new Date().getFullYear() + "</span>"
+    );
+ 
+//switch menu pic
+$("#objItem .tab_btn img").click(function(){
+    $("#tab1").attr("src", "images/tab1.png");
+    $("#tab2").attr("src", "images/tab2.png");
+    $("#tab3").attr("src", "images/tab3.png");
+    $("#tab4").attr("src", "images/tab4.png");
+    $("#tab5").attr("src", "images/tab5.png");
+    $("#ltab1").hide();
+    $("#ltab2").hide();
+    $("#ltab3").hide();
+    $("#ltab4").hide();
+    $("#ltab5").hide();
+
+    var imgID = $(this).attr('id');
+    $(this).attr("src", "images/" + imgID + "_active.png");
+    console.log(imgID);
+    $("#l"+imgID).show();
+});
+    //vegas
+    // $("#top").vegas({
+    //   slides: [
+    //     {
+    //       video: {
+    //         src: ["video/index_video_960.mp4"],
+    //         loop: true,
+    //         mute: true,
+    //       },
+    //     }
+    //   ],
+    // });
+
+    //a liner
+    $('.linear').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+    });
+
+    //mobile
+
+    function isMobile() {
+      try{ document.createEvent("TouchEvent"); return true; }
+      catch(e){ return false;}
+      }
+      if(isMobile()){
+        $("#top").vegas({
+          slides: [
+        { src: "video/top_bg.jpg" }
+    ]
+    }); 
+      }
+      else{
+        $("#top").vegas({
+      slides: [
+        {
+          video: {
+            src: ["video/index_video_960.mp4"],
+            loop: true,
+            mute: true,
+          },
+        }
+      ],
+    });
+      }
+
+      //mobile menu toggle
+            $(".navbar_m").click(function () {
+        $(this).toggleClass("active");
+      });
+
+
+    //swiper
+    // var swiper = new Swiper('.swiper-container', {
+    //   slidesPerView: 3,
+    //   slidesPerColumn: 2,
+    //   spaceBetween: 30,
+    //   pagination: {
+    //     el: '.swiper-pagination',
+    //     clickable: true,
+    //   },
+    // });
+    // $("#multipleColumn .bd li").each(function(i){ 
+    //   $("#multipleColumn .bd li").slice(i*6,i*6+6).wrapAll("<ul></ul>");
+    // });
+    // $("#multipleColumn").slide({
+    //   titCell:".hd ul",
+    //   mainCell:".bd .picList",
+    //   autoPage:true,
+    //   effect:"leftLoop",
+    //   autoPlay:true
+    // });
+  </script>
+</html>
