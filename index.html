@@ -25,47 +25,68 @@
   <body class="">
     <main class="">
       <nav class="headnav position-absolute row w-100">
-        <div class="logo col-2 d-flex align-self-start">
+        <div class="logo col-5 col-sm-3 d-flex align-self-start">
           <img src="images/logo.svg" alt="" class="img_fluid" >
         </div>
-        <div class="col"></div>
+        <div class="col web"></div>
         <div class="navbar_menu col-7 col-lg-5  ">
-          <div class=" navbar_m ">
-            <ul class="d-flex nav_mobile">
-              <li>1</li>
-              <li class="bg_red">2</li>
-              <li>3</li>
+          <div class=" navbar_m transition">
+            <div class="bar bar1 transition"></div>
+            <div class="bar bar2 transition"></div>
+            <div class="bar bar3 transition"></div>
+            <ul class="transition">
+              <li id="mhome" class="one">
+                <a class="list-tab linear" href="#"><span>主页</span></a>
+              </li>
+              <li id="mgames" class="two">
+                <a class="list-tab linear" href="#games"
+                  ><span>游戏</span></a
+                >
+              </li>
+              <li id="mprofession" class="three">
+                <a class="list-tab linear" href="#profession"
+                  ><span>服务优势</span></a
+                >
+              </li>
+              <li id="mefficient" class="four">
+                <a class="list-tab linear" href="#efficient"
+                  ><span>合作流程</span></a
+                >
+              </li>
+              <li id="mcontact" class="five">
+                <a class="list-tab linear" href="#contact"><span>联系我们</span></a>
+              </li>
             </ul>
           </div>
           <div class="navbar_w ">
             <ul class="navbar row ">
               <li class="white col">
                 <a href="#" class="top_btn">
-                  <span>主页</span>
+                  <span class="white_space">主页</span>
                 <div class="dot"></div>
                 </a>
               </li>
               <li class="white col">
                 <a href="#games" class="linear">
-                  <span>游戏</span>
+                  <span class="white_space">游戏</span>
                 <div class="dot"></div>
                 </a>
               </li>
               <li class="white col">
                 <a href="#profession" class="linear">
-                  <span>服务优势</span>
+                  <span class="white_space">服务优势</span>
                   <div class="dot"></div>
                 </a>
               </li>
               <li class="white col">
                 <a href="#efficient" class="linear">
-                  <span>合作流程</span>
+                  <span class="white_space">合作流程</span>
                   <div class="dot"></div>
                 </a>
               </li>
               <li class="white col">
                 <a href="#contact" class="linear">
-                <span>联系我们</span>
+                <span class="white_space">联系我们</span>
                 <div class="dot"></div>
                 </a>
               </li>
@@ -688,15 +709,18 @@
             </div>
             <div class="contact_box ">
               <!-- <div class="col-1"></div> -->
-              <ul class="contact_info  d-flex flex-column ">
+              <ul class="contact_info  d-flex ">
                 <li class=" QR"><img src="images/QR.png" alt="" class="img_fluid QRcode"></li>
-                <li class=" tel"><a class="row" href="#"><img src="images/tel.png" class="contact_icon " alt=""><span class="col-5 white font5">+86 16794638479</span></a></li>
-                <li class=" mail"><a class="row"  href="#"><img src="images/mail.png" class="contact_icon " alt=""><span class="col-5 white font5">ieuithiio@gmail.com</span></a></li>
-                <li class=" skype"><a class="row"  href="#"><img src="images/skype.png" class="contact_icon " alt=""><span class="col-5 white font5">点此与KX商务交谈</span></a></li>
-                <li class=" twitter"><a class="row"  href="#"><img src="images/twitter.png"  alt="" class="contact_icon " alt=""><span class="col-5 white font5">ieuithiio@gmail.com</span></a></li>
+
+                <ul class="d-flex flex-column pl-2 pr-2">
+                  <li class=" tel"><a class="row" href="#"><img src="images/tel.png" class="contact_icon " alt=""><span class="col-5 white font5">+86 16794638479</span></a></li>
+                  <li class=" mail"><a class="row"  href="#"><img src="images/mail.png" class="contact_icon " alt=""><span class="col-5 white font5">ieuithiio@gmail.com</span></a></li>
+                  <li class=" skype"><a class="row"  href="#"><img src="images/skype.png" class="contact_icon " alt=""><span class="col-5 white font5">点此与KX商务交谈</span></a></li>
+                  <li class=" twitter"><a class="row"  href="#"><img src="images/twitter.png"  alt="" class="contact_icon " alt=""><span class="col-5 white font5">ieuithiio@gmail.com</span></a></li>
+                </ul>
               </ul>
-              <div class="table ">
-                <!-- <div class="table_content col-6">
+              <div class="table position-relative">
+                <div class="table_content  position-absolute">
                   <p>如您需要咨询，请填写下面表格，我们将尽快与您联系：</p>
                   <form>
                     <div class="form-row">
@@ -730,7 +754,7 @@
 
                   </form>
 
-              </div> -->
+              </div>
               <img src="images/table.png" alt="" class="img_fit">
             </div>
           </div>
@@ -764,7 +788,39 @@
     );
  
     //vegas
-    $("#top").vegas({
+    // $("#top").vegas({
+    //   slides: [
+    //     {
+    //       video: {
+    //         src: ["video/index_video_960.mp4"],
+    //         loop: true,
+    //         mute: true,
+    //       },
+    //     }
+    //   ],
+    // });
+
+    //a liner
+    $('.linear').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+    });
+
+    //mobile
+
+    function isMobile() {
+      try{ document.createEvent("TouchEvent"); return true; }
+      catch(e){ return false;}
+      }
+      if(isMobile()){
+        $("#top").vegas({
+          slides: [
+        { src: "video/top_bg.jpg" }
+    ]
+    }); 
+      }
+      else{
+        $("#top").vegas({
       slides: [
         {
           video: {
@@ -775,12 +831,13 @@
         }
       ],
     });
+      }
 
-    //a liner
-    $('.linear').on('click', function(e) {
-    e.preventDefault();
-    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
-    });
+      //mobile menu toggle
+            $(".navbar_m").click(function () {
+        $(this).toggleClass("active");
+      });
+
 
     //swiper
     // var swiper = new Swiper('.swiper-container', {

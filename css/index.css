@@ -63,6 +63,10 @@ ul.navbar li a:hover .dot,.top_btn .dot{
 ul.topnav li span{
     width: 20%;
 }
+.navbar_menu{
+  display: flex;
+  justify-content: flex-end;
+}
 .navbar_m{
   display: none;
 }
@@ -70,13 +74,73 @@ ul.topnav li span{
   justify-content: flex-end;
   flex-flow: row;
 }
+.bar {
+  width: 36px;
+  height: 4px;
+  background: #ffffff;
+  margin: 6px 0;
+  border-radius: 2px;
+}
+.active .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 7px);
+  transform: rotate(-45deg) translate(-9px, 5px);
+}
+
+.active .bar2 {
+  opacity: 0;
+}
+
+.active .bar3 {
+  -webkit-transform: rotate(45deg) translate(-9px, -8px);
+  transform: rotate(45deg) translate(-9px, -5px);
+}
 @media screen and (max-width: 768px){
   .navbar{
     display: none;
   }
   .navbar_m{
     display: block;
+    margin:5px 15px;
   }
+  
+  .navbar_m ul {
+    position: absolute;
+    right: 0;
+    top: 2.5rem;
+    background: rgba(0, 0, 0, 0.5);
+    width: 180px;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    color: #000000;
+    padding: 0;
+  }
+  .navbar_m.active ul {
+    opacity: 1;
+    max-height: 400px;
+  }
+  .navbar_m ul li {
+    /* border: 1px solid #000000; */
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .navbar_m ul li a {
+    display: block;
+    padding: 20px 12px;
+    font-weight: 600;
+    color: #fff;
+    font-size: 20px;
+  }
+  .navbar_m ul li a:hover{
+    color: #ffc341;
+    transition: .4s ease;
+  }
+  .navbar_m li.active a {
+    color: #ffc341;
+    text-shadow: 0px 0px 10px rgba(255, 195, 65, 1);
+  }
+  
 }
 /* ---------------------------------------------------------- */
 #top {
@@ -392,7 +456,7 @@ section{
   font-weight: 500;
 }
 @media screen and (max-width: 1024px){
-  .block_left,{
+  .block_left{
     padding-right: 0;
   }
   .block_right{
@@ -449,6 +513,7 @@ section{
   justify-content: center;
   align-items: stretch;
   margin: 0 auto;
+  width: auto;
   /* width: 100%;
   height: auto; */
   /* transform: translateX(15px); */
@@ -498,6 +563,9 @@ section{
   margin: 0 auto;
   /* padding: 5%; */
   /* flex-flow: column; */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
 }
 .table_content li{
   /* padding: 10px 0; */
@@ -532,7 +600,19 @@ section{
 .contact_icon{
   max-width: 30px;
 }
-
+@media screen and (max-width: 1024px){
+  .table{
+    display: none;
+  }
+  .contact_box{
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  .contact_info{
+    flex-flow: row-reverse;
+    justify-content: space-evenly;
+  }
+}
 /* ---------------------------------------------------------- */
 .footer{
   width: 100%;
