@@ -563,9 +563,6 @@ section{
 .contact_info li a{
   list-style: none;
 }
-.tel,.mail,.skype,.twitter{
-  /* flex: 1; */
-}
 .table_content{
   /* background-color: rgba(222, 184, 135, 0.479); */
   display: flex;
@@ -609,6 +606,7 @@ section{
 }
 .contact_icon{
   max-width: 30px;
+  object-fit: contain;
 }
 @media screen and (max-width: 1024px){
   .table{
