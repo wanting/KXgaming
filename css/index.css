@@ -468,7 +468,7 @@ section{
   position: relative;
   z-index: 100;
   line-height: 0!important;
-  background: no-repeat url("/images/index_sention4_bg.png");
+  background: no-repeat url("../images/index_sention4_bg.png");
   background-position: bottom;
   background-size: cover;
 }
@@ -496,7 +496,7 @@ section{
 #contact{
   /* max-height: 728px; */
   /* background-color: #4a3f7a; */
-  background: repeat url("/images/index_sention4_bg.png");
+  background: repeat url("../images/index_sention4_bg.png");
   background-position: bottom;
   background-size: cover;
   /* position: relative; */
@@ -512,7 +512,7 @@ section{
   flex-flow: column;
   z-index: 90;
   /* top: 20%; */
-  background: repeat url("/images/index_sention4_4.png");
+  background: repeat url("../images/index_sention4_4.png");
   background-position: bottom;
   background-size: cover;
 }
