@@ -156,7 +156,7 @@ ul.topnav li span{
 
 .top_cover{
   z-index: 2;
-  bottom: 0;
+  bottom: -1px;
 }
 
 #top a  {
@@ -497,7 +497,7 @@ section{
   position: relative;
   z-index: 100;
   line-height: 0!important;
-  background: no-repeat url("../images/index_sention4_bg.png");
+  background: no-repeat url("../images/index_sention4_bg_g.png");
   background-position: bottom;
   background-size: cover;
 }
