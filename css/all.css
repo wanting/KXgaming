@@ -3,6 +3,7 @@
 }
 html{
   overflow-x: hidden;
+  scrollbar-width: none;
 }
 body * {
   margin: 0;

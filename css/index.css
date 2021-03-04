@@ -4,7 +4,7 @@
 
 .headnav{
     /* height: 10%; */
-    /* width: 100%; */
+    width: 100vw;
     /* background-color: rgba(165, 42, 42, 0.233); */
     display: flex;
     flex-flow: row;
@@ -12,6 +12,7 @@
     top: 0;
     z-index: 99;
     transform: translateX(15px);
+    /* margin: 0; */
 }
 .logo{
     margin: 0.5rem;
@@ -102,10 +103,12 @@ ul.topnav li span{
     display: block;
     margin:5px 15px;
   }
-  
+  .logo{
+    padding: 0;
+  }
   .navbar_m ul {
     position: absolute;
-    right: 0;
+    right: 20px;
     top: 2.5rem;
     background: rgba(0, 0, 0, 0.5);
     width: 180px;
@@ -482,10 +485,10 @@ section{
   
 }
 .block2,.block3{
-  animation: blockMove 1.45s infinite;
+  animation: blockMove 2.9s infinite;
 }
 .block1,.block4{
-  animation: blockMove2 1.6s infinite;
+  animation: blockMove2 3.6s infinite;
 }
 .b_content{
   display: flex;
@@ -705,23 +708,23 @@ section{
 /* ---------------------------------------------------------- */
 @keyframes blockMove {
   0%{
-      top:-10px;
+      top:-5px;
   }
   50%{
       top:0px;
   }
   100%{
-      top:-10px;
+      top:-5px;
   }
 }
 @keyframes blockMove2 {
   0%{
-      top:-10px;
+      top:-5px;
   }
   50%{
       top:0px;
   }
   100%{
-      top:-10px;
+      top:-5px;
   }
 }
