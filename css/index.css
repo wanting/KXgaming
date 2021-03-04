@@ -23,6 +23,9 @@
 .navbar_w,.navbar_m{
   justify-content: flex-end;
 }
+.navbar_w{
+  width: 100%;
+}
 .navbar{
     /* background-color: burlywood; */
     padding:1rem 0;
@@ -96,10 +99,8 @@ ul.topnav li span{
   transform: rotate(45deg) translate(-9px, -5px);
 }
 @media screen and (max-width: 768px){
-  /* .headnav{
-    justify-content: space-between;
-  } */
-  .navbar{
+
+  .navbar_w{
     display: none;
   }
   .navbar_menu{
@@ -275,13 +276,7 @@ section{
 }
 /* ---------------------------------------------------------- */
 
-#games{
-  /* background: no-repeat url("/images/index_sention1.png");
-  background-position: center;
-  background-size: cover; */
-  /* position: relative; */
-    /* background-color: rgba(30, 102, 210, 0.397); */
-}
+
 .game_flex{
   display: flex;
   flex-flow: column;
@@ -457,19 +452,12 @@ section{
 
 }
 /* ---------------------------------------------------------- */
-#profession{
-  /* position: relative; */
-  /* height: 90vh; */
-  /* background-color: burlywood; */
-}
+
 .profession_flex{
   display: flex;
   flex-flow: column;
 }
 .girl{
-  /* flex: 1.2; */
-  /* padding: 1.5%; */
-  /* max-width: 600px; */
   margin: 2% auto 12%  auto;
 }
 .profession_box{
@@ -569,9 +557,6 @@ section{
   .progress_bar{
     padding: 20% 0 20% 20% ;
   }
-  /* .sention3_bg{
-    transform: scale(1.01);
-  } */
 }
 /* ---------------------------------------------------------- */
 #contact{
