@@ -96,6 +96,9 @@ ul.topnav li span{
   transform: rotate(45deg) translate(-9px, -5px);
 }
 @media screen and (max-width: 768px){
+  .headnav{
+    justify-content: space-between;
+  }
   .navbar{
     display: none;
   }
