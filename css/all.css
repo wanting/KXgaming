@@ -18,6 +18,7 @@ body * {
   /* 消除鋸齒 */
   -webkit-font-smoothing: antialiased;
   /* overflow: hidden; */
+  overflow-x: hidden;
 }
 a{
   text-decoration: none;
