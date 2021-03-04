@@ -601,6 +601,15 @@ section{
   flex: 1.5;
   padding:3% 5%;
   align-items: flex-start;
+  display: flex;
+  flex-flow: column;
+}
+.contact_li{
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  list-style: none;
+  line-height: 30px;
 }
 .table{
   flex: 4;
@@ -610,11 +619,6 @@ section{
   /* background-color: rgba(96, 210, 30, 0.397); */
   padding: 30px 0;
   /* margin:0 10%; */
-}
-.contact_info{
-  display: flex;
-  flex-flow: column;
-
 }
 .contact_info li{
   display: flex;
@@ -626,10 +630,6 @@ section{
 }
 .QR{
   padding: 10px 0;
-}
-.contact_info li a{
-  list-style: none;
-  line-height: 30px;
 }
 .table_content{
   /* background-color: rgba(222, 184, 135, 0.479); */
@@ -675,6 +675,7 @@ section{
 .contact_icon{
   max-width: 30px;
   object-fit: contain;
+  padding-right: 10px;
 }
 @media screen and (max-width: 1024px){
   .table{
