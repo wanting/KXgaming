@@ -227,6 +227,11 @@ ul.topnav li span{
 		opacity: 0;
 	}
 }
+@media screen and (max-width: 768px){
+  #top a ,#top a span {
+    top: 70%;
+  }
+}
 /* ---------------------------------------------------------- */
 .wrapper{
   /* width: 100%; */
