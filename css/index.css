@@ -316,12 +316,16 @@ section{
 .slider_main{
   display: flex;
   flex-flow: row;
-  padding: 0 20px;
+  padding: 0 60px;
 }
 .slide_column{
   display: flex;
   flex-flow: column;
   filter: brightness(1);
+}
+.small_slide{
+  /* border: 2px solid red; */
+  transform: translateX(30%);
 }
 .slide_column button:hover{
   filter: brightness(1.2);
@@ -423,7 +427,15 @@ section{
 .modal-backdrop.show{
   opacity: .7;
 }
+
 @media screen and (max-width: 480px){
+  .slider_main{
+    padding: 0 20px;
+  }
+  .small_slide{
+    transform: translateX(20%);
+    margin-top: 5px;
+  }
   .modal-body{
     padding: 0;
   }
@@ -449,7 +461,13 @@ section{
     padding: 10px 5px;
 
   }
-
+  .carousel-indicators li {
+    padding:2px;
+    m0
+  }
+  .carousel-indicators li.active{
+      padding:2px; 
+  }
 }
 /* ---------------------------------------------------------- */
 
@@ -584,8 +602,8 @@ section{
   flex-flow: column;
   z-index: 90;
   background: repeat url("../images/index_sention4_4.png");
-  background-position: top;
-  background-size: contain;
+  background-position: center;
+  background-size: cover;
 }
 .contact_box{
   
