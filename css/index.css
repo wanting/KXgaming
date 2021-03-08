@@ -241,8 +241,8 @@ ul.topnav li span{
 }
 /* ---------------------------------------------------------- */
 .wrapper{
-  /* width: 100%; */
-  max-width: 1440px;
+  width: 100%;
+  /* max-width: 1440px; */
   margin: 0 auto;
 }
 section{
@@ -252,7 +252,7 @@ section{
 }
 .headline{
   /* width: 100%; */
-  max-width: 1440px;
+  /* max-width: 1440px; */
   margin: 8vh auto 2vh auto;
   height: auto;
   display: flex;
@@ -423,7 +423,7 @@ section{
 .modal-backdrop.show{
   opacity: .7;
 }
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 480px){
   .modal-body{
     padding: 0;
   }
@@ -545,10 +545,16 @@ section{
 }
 .progress_bar{
   display: flex;
-  padding: 0 20% 0 5%;
+  padding: 0 0 15% 13%;
 }
 .progress_bar_img{
   max-height: 450px;
+}
+@media screen and (max-width: 1440px){
+  .progress_bar{
+    display: flex;
+    padding: 0 20% 0 5%;
+  }
 }
 @media screen and (max-width: 1024px){
   .efficient_info{
@@ -577,10 +583,9 @@ section{
   display: flex;
   flex-flow: column;
   z-index: 90;
-  /* top: 20%; */
   background: repeat url("../images/index_sention4_4.png");
-  background-position: bottom;
-  background-size: cover;
+  background-position: top;
+  background-size: contain;
 }
 .contact_box{
   
@@ -647,8 +652,8 @@ section{
 }
 .table_btn{
   background-color: #ffae00;
-  border-radius: 15px;
-  padding: 5px 15px;
+  border-radius: 5px;
+  padding: 8px 35px;
 }
 .sention4_bg{
   bottom: 0;
@@ -675,6 +680,13 @@ section{
   max-width: 30px;
   object-fit: contain;
   padding-right: 10px;
+}
+@media screen and (max-width: 1440px){
+  .contact_flex{
+    background: repeat url("../images/index_sention4_4.png");
+    background-position: bottom;
+    background-size: cover;
+  }
 }
 @media screen and (max-width: 1024px){
   .table{
